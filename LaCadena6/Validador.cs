@@ -11,21 +11,20 @@ namespace LaCadena6
         public static void CompararIgualdadString(string str1, string str2)
         {
 
-            int comparacion = string.Compare(str1,str2);
+            bool comparacion = str1.Equals(str2);
 
-            if (comparacion == 0)
+            if (comparacion == true)
             {
-                Console.WriteLine("\n La cadena" + " *" + str1 + "*" + " SI es igual a la cadena " + "*" + str2 + "*");
+                Console.WriteLine("\n La cadena" + " *" + str1 + "*" + " SI tiene el mismo valor que la cadena " + "*" + str2 + "*");
             }
             else
             {
-                Console.WriteLine("\n La cadena" + " *" + str1 + "*" + " NO es igual a la cadena " + "*" + str2 + "*");
-            }
-            
 
+                Console.WriteLine("\n La cadena" + " *" + str1 + "*" + " NO tiene el mismo valor que la cadena " + "*" + str2 + "*");
+            }
         }
 
-        public static void MostrarString(string cadena)
+            public static void MostrarString(string cadena)
         {
             
             Console.WriteLine("\n Usted escribio " + "*" + cadena + "*" );
